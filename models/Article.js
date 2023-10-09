@@ -1,6 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const ArticleSchema = new Schema({
+    author: {
+        type: String,
+        require: true
+    },
     title: {
         type: String,
         require: true
